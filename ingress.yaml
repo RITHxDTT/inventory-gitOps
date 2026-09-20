@@ -8,8 +8,7 @@ spec:
   ingressClassName: traefik
 
   rules:
-    - host: yungbunnrith.shop
-      http:
+    - http:
         paths:
           - path: /
             pathType: Prefix
