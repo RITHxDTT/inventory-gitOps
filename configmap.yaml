@@ -10,3 +10,4 @@ data:
   DB_PORT: "5432"
   APP_DEBUG: "False"
   SECURE_SSL_REDIRECT: "False"
+  ALLOWED_HOSTS: "yungbunnrith.shop,www.yungbunnrith.shop,localhost,127.0.0.1"
