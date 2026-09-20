@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: inventory-config
+  namespace: inventory
+
+data:
+  DB_NAME: inventory_db
+  DB_HOST: host.k3d.internal
+  DB_PORT: "5432"
+  APP_DEBUG: "False"
+  SECURE_SSL_REDIRECT: "False"

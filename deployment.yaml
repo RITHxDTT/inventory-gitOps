@@ -1,0 +1,29 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: inventory-app
+  namespace: inventory
+
+spec:
+  replicas: 1
+
+  selector:
+    matchLabels:
+      app: inventory-app
+
+  template:
+    metadata:
+      labels:
+        app: inventory-app
+
+    spec:
+      containers:
+        - name: inventory-app
+          image: idkisme/inventory:v1
+
+          ports:
+            - containerPort: 8000
+
+          envFrom:
+            - configMapRef:
+                name: inventory-config
