@@ -19,7 +19,7 @@ spec:
     spec:
       containers:
         - name: inventory-app
-          image: idkisme/inventory:v1
+          image: idkisme/inventory:v2
 
           ports:
             - containerPort: 8000
